@@ -3,11 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="floatBtn.MainPage">
     <AbsoluteLayout>
-
-        <ImageButton Source="editFAB.png" 
-                     BackgroundColor="Transparent"
-                     AbsoluteLayout.LayoutFlags="PositionProportional"  
-                     AbsoluteLayout.LayoutBounds=".95,.95,80,80" 
-                     Clicked="ImageButton_Clicked" />
+        <Grid AbsoluteLayout.LayoutFlags="PositionProportional"  
+              AbsoluteLayout.LayoutBounds=".95,.95,80,80"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <Label FontFamily="SR"
+                   TextColor="Black"
+                   FontSize="60"
+                   Text="&#xf111;"/>
+            <Label FontFamily="SR"
+                   Margin="20,20,0,0"
+                   FontSize="20"
+                   TextColor="White"
+                   Text="&#x2b;"/>
+        </Grid>
     </AbsoluteLayout>
 </ContentPage>
